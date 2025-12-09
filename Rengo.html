@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>College and Career Ready Pledge</title>
+<style>
+  /* Ensure full height for body and html */
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #pledge-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .pledge-container {
+    border: 3px solid #6cc3d5;
+    padding: 15px 15px 30px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 15px 0;
+  }
+  ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  ul li input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    vertical-align: middle;
+  }
+  #by-going-title {
+    font-weight: bold;
+    color: #002366;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+  #by-going-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+  #by-going-list strong {
+    font-weight: bold;
+  }
+  .buttons {
+    max-width: 600px;
+    margin: 30px auto 0;
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+  button {
+    border: none;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 15px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+  }
+  #agree-btn {
+    background: linear-gradient(to right, #6cbf45, #9fd555);
+  }
+  #disagree-btn {
+    background: linear-gradient(to right, #d55353, #f06868);
+  }
+  .icon {
+    margin-right: 8px;
+    font-size: 22px;
+    user-select: none;
+    pointer-events: none;
+  }
+  #books-img {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 45px;
+    height: auto;
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 640px) {
+    .pledge-container {
+      padding: 12px 12px 25px;
+      max-width: 95vw;
+    }
+    ul li {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+    h1 {
+      font-size: 1.25rem;
+    }
+    #by-going-title {
+      font-size: 1rem;
+    }
+    button {
+      width: 80vw;
+      min-width: auto;
+      padding: 14px 0;
+      font-size: 18px;
+      margin: 8px 0;
+      justify-content: center;
+    }
+    .buttons {
+      padding-bottom: 30px;
+    }
+    #books-img {
+      width: 40px;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  /* Response page styling */
+  #response-page {
+    display: none;
+    height: 100vh;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    box-sizing: border-box;
+  }
+
+  .response-card {
+    max-width: 360px;
+    width: 90%;
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    text-align: center;
+  }
+
+  .response-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #000;
+  }
+
+  .response-message {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<!-- Page 1: Pledge Form -->
+<div id="form-page">
+  <h1>I Pledge To Be College and Career Ready</h1>
+  <div class="pledge-container" role="region" aria-label="College and Career Ready Pledge">
+    <div id="pledge-title">I PLEDGE TO:</div>
+    <ul>
+      <li><label><input type="checkbox" name="pledge" /> Earn good grades</label></li>
+      <li><label><input type="checkbox" name="pledge" /> Participate in class</label></li>
+      <li><label><input type="checkbox" name="pledge" /> Always do my best</label></li>
+      <li><label><input type="checkbox" name="pledge" /> Complete homework</label></li>
+      <li><label><input type="checkbox" name="pledge" /> Attend school daily and on time</label></li>
+      <li><label><input type="checkbox" name="pledge" /> Set goals and work hard to achieve them</label></li>
+      <li><label><input type="checkbox" name="pledge" /> Ask for help when I need it</label></li>
+    </ul>
+
+    <div id="by-going-title">BY GOING TO COLLEGE I WILL:</div>
+    <ul id="by-going-list">
+      <li><strong>Gain knowledge!</strong> College students acquire skills and expertise in subjects that excite them. They learn how to think critically and express their thoughts.</li>
+      <li><strong>Expand my horizons!</strong> College life is full of opportunities to meet new friends, interact with experts in numerous fields and gain hands-on learning and work experiences.</li>
+      <li><strong>Enjoy a secure future!</strong> Higher education is associated with better working conditions, more promotion opportunities and job stability.</li>
+      <li><strong>Have more career options!</strong> Most jobs require education past high school.</li>
+      <li><strong>Earn more money!</strong> A person with a college degree has the potential to earn more money than a person without one.</li>
+    </ul>
+  </div>
+
+  <div class="buttons">
+    <button id="agree-btn" type="button" onclick="submitResponse('agree')" aria-label="Agree to pledge">
+      <span class="icon" aria-hidden="true">✔️</span> AGREE
+    </button>
+    <button id="disagree-btn" type="button" onclick="submitResponse('disagree')" aria-label="Disagree with pledge">
+      <span class="icon" aria-hidden="true">❌</span> DISAGREE
+    </button>
+  </div>
+</div>
+
+<!-- Page 2: Response Confirmation -->
+<div id="response-page" role="alert" aria-live="polite" aria-atomic="true">
+  <div class="response-card">
+    <div class="response-title">Response Recorded</div>
+    <div class="response-message">Thank you! Your response has been recorded.</div>
+  </div>
+</div>
+
+<script>
+  function submitResponse(choice) {
+    // Check if at least one checkbox is checked
+    const checkedBoxes = document.querySelectorAll('input[name="pledge"]:checked');
+    if (checkedBoxes.length === 0) {
+      alert('Please check at least one pledge item before proceeding.');
+      return;
+    }
+    // Proceed to response page
+    document.getElementById('form-page').style.display = 'none';
+    document.getElementById('response-page').style.display = 'flex';
+  }
+</script>
+
+</body>
+</html>
